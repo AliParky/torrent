@@ -1,2 +1,3 @@
 class TorrentClient:
-    pass
+    def get_info_hash(self, torrent_file):
+        return
