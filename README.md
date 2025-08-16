@@ -7,3 +7,5 @@ A minimal implementation of a BitTorrent
 - Python 3.7+
 
 ## Installation
+
+1. Clone this repository
