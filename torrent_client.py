@@ -5,4 +5,6 @@ class TorrentClient:
         
         # Find info dictionary start
         info_start = data.find(b'4:infod')
+
+        info_dict = data[info_start + 6:-1]
         return
