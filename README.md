@@ -9,3 +9,4 @@ A minimal implementation of a BitTorrent
 ## Installation
 
 1. Clone this repository
+2. Install required dependencies
