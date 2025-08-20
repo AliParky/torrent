@@ -9,4 +9,8 @@ A minimal implementation of a BitTorrent
 ## Installation
 
 1. Clone this repository
+
+```bash
+git clone git clone https://github.com/AliParky/torrent
+```
 2. Install required dependencies
