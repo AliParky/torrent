@@ -5,6 +5,8 @@ A minimal implementation of a BitTorrent
 ## Requirements
 
 - Python 3.7+
+- Required packages:
+    - `hashlib`
 
 ## Installation
 
