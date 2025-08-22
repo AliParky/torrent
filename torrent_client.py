@@ -10,4 +10,5 @@ class TorrentClient:
 
         # Extract info dict
         info_dict = data[info_start + 6:-1]
-        return
+        
+        return hashlib.sha1(info_dict).hexdigest()
