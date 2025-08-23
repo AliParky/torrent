@@ -1,6 +1,6 @@
 # torrent
 
-A minimal implementation of a BitTorrent
+A minimal implementation of a BitTorrent client
 
 ## Requirements
 
