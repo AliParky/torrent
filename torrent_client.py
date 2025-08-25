@@ -2,6 +2,7 @@ import hashlib
 
 class TorrentClient:
     def get_info_hash(self, torrent_file):
+        """Extract and hash the info dictionary from a torrent file"""
         with open(torrent_file, 'rb') as f:
             data = f.read()
         
