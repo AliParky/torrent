@@ -13,3 +13,6 @@ class TorrentClient:
         info_dict = data[info_start + 6:-1]
         
         return hashlib.sha1(info_dict).hexdigest()
+    
+        def verify_piece(self, piece_data, expected_hash):
+            return
