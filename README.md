@@ -4,6 +4,8 @@ A minimal implementation of a BitTorrent client
 
 ## Overview
 
+The client handles torrent file downloading.
+
 ## Requirements
 
 - Python 3.7+
