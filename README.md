@@ -20,3 +20,6 @@ The client handles torrent file downloading.
 git clone git clone https://github.com/AliParky/torrent
 ```
 2. Install required dependencies
+```bash
+pip install requests
+```
