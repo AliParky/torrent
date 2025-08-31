@@ -15,4 +15,4 @@ class TorrentClient:
         return hashlib.sha1(info_dict).hexdigest()
     
     def verify_piece(self, piece_data, expected_hash):
-        return
+        return hashlib.sha1(piece_data).digest() == expected_hash
