@@ -1,6 +1,6 @@
 # torrent
 
-A minimal implementation of a BitTorrent client
+A minimal implementation of a BitTorrent client written in Python.
 
 ## Overview
 
