@@ -4,7 +4,7 @@ A minimal implementation of a BitTorrent client written in Python.
 
 ## Overview
 
-The client handles torrent file parsing and file downloading.
+This project implements a basic BitTorrent client. The client handles torrent file parsing and file downloading.
 
 ## Requirements
 
