@@ -18,6 +18,9 @@ class TorrentClient:
         """Verify a downloaded piece matches expected hash"""
         return hashlib.sha1(piece_data).digest() == expected_hash
     
+    def download(self, torrent_file):
+        return
+        
     def _decode_bencode(self, data):
         """Decode bencoded data"""
         return
