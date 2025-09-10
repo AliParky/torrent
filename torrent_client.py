@@ -19,6 +19,8 @@ class TorrentClient:
         return hashlib.sha1(piece_data).digest() == expected_hash
     
     def download(self, torrent_file):
+        with open(torrent_file, 'rb') as f:
+            data = f.read()
         return
         
     def _decode_bencode(self, data):
