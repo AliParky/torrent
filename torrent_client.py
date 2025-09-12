@@ -25,4 +25,6 @@ class TorrentClient:
         
     def _decode_bencode(self, data):
         """Decode bencoded data"""
+        def decode_next(data, index):
+            return
         return
