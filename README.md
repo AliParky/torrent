@@ -8,6 +8,8 @@ This project implements a basic BitTorrent client that can download files using 
 
 ## Features
 
+- File downloading from peers
+
 ## Requirements
 
 - Python 3.7+
