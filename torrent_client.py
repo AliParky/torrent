@@ -27,6 +27,7 @@ class TorrentClient:
         """Decode bencoded data"""
         def decode_next(data, index):
             if data[index:index+1] == b'i':
-                return int(data[index+1:data.index(b'e', index)]), data.index(b'e', index) + 1
+                end = data.index(b'e', index)
+                return int(data[index+1:end]), end + 1
             return
         return
