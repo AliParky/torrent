@@ -29,5 +29,7 @@ class TorrentClient:
             if data[index:index+1] == b'i':
                 end = data.index(b'e', index)
                 return int(data[index+1:end]), end + 1
+            elif data[index:index+1] == b'l':
+                pass
             return
         return
