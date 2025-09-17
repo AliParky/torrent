@@ -30,6 +30,6 @@ class TorrentClient:
                 end = data.index(b'e', index)
                 return int(data[index+1:end]), end + 1
             elif data[index:index+1] == b'l':
-                pass
+                items, index = {}, index + 1
             return
         return
