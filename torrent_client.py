@@ -31,5 +31,8 @@ class TorrentClient:
                 return int(data[index+1:end]), end + 1
             elif data[index:index+1] == b'l':
                 items, index = {}, index + 1
+                while data[index:index+1] != b'e':  # Until end marker
+                    item, index = decode_next(data, index)
+                    items.append(item)
             return
         return
