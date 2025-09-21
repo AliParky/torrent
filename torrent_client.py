@@ -35,5 +35,7 @@ class TorrentClient:
                     item, index = decode_next(data, index)
                     items.append(item)
                 return items, index + 1
+            elif data[index:index+1] == b'd':
+                return
             return
         return
