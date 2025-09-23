@@ -36,6 +36,7 @@ class TorrentClient:
                     items.append(item)
                 return items, index + 1
             elif data[index:index+1] == b'd':
+                items, index = {}, index + 1
                 return
             return
         return
