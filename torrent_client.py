@@ -40,6 +40,7 @@ class TorrentClient:
                 while data[index:index+1] != b'e':
                     key, index = decode_next(data, index)
                     value, index = decode_next(data, index)
+                    items[key] = value
                 return
             return
         return
