@@ -41,6 +41,6 @@ class TorrentClient:
                     key, index = decode_next(data, index)
                     value, index = decode_next(data, index)
                     items[key] = value
-                return
+                return items, index + 1
             return
         return
