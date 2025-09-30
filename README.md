@@ -12,6 +12,7 @@ This project implements a basic BitTorrent client that can download files using 
 - Info hash calculation
 - Peer discovery via trackers
 - File downloading from peers
+- Basic BitTorrent protocol implementation
 
 ## Requirements
 
