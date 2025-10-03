@@ -46,4 +46,4 @@ class TorrentClient:
                 colon = data.index(b':', index)
                 length = int(data[index:colon])
             return data[colon+1:colon+1+length], colon + 1 + length
-        return
+        return decode_next(data, 0)[0]
