@@ -8,7 +8,7 @@ This project implements a basic BitTorrent client that can download files using 
 
 ## Features
 
-- Torrent file parsing
+- Torrent file parsing (.torrent files)
 - Info hash calculation
 - Peer discovery via trackers
 - File downloading from peers
