@@ -22,6 +22,7 @@ class TorrentClient:
         with open(torrent_file, 'rb') as f:
             data = f.read()
         torrent = self._decode_bencode(data)
+        info_hash = self.get_info_hash(torrent_file)
         return
         
     def _decode_bencode(self, data):
