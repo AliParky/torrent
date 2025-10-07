@@ -49,3 +49,6 @@ class TorrentClient:
                 length = int(data[index:colon])
             return data[colon+1:colon+1+length], colon + 1 + length
         return decode_next(data, 0)[0]
+    
+    def _get_peers(self, announce_url, info_hash, length):
+        return
