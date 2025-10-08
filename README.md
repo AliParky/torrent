@@ -31,3 +31,5 @@ git clone git clone https://github.com/AliParky/torrent
 ```bash
 pip install requests
 ```
+
+## How It Works
