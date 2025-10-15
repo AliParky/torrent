@@ -1,4 +1,4 @@
-import hashlib, requests
+import hashlib, requests, struct
 
 class TorrentClient:
     def get_info_hash(self, torrent_file):
