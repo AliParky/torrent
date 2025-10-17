@@ -20,6 +20,7 @@ This project implements a basic BitTorrent client that can download files using 
 - Required packages:
     - `hashlib`
     - `requests`
+    - `struct`
 
 ## Installation
 
