@@ -36,3 +36,5 @@ pip install requests
 ```
 
 ## How It Works
+
+1. The client reads .torrent files and extracts metadata
