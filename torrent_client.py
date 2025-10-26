@@ -61,4 +61,5 @@ class TorrentClient:
     def _download_from_peer(self, ip, port, info_hash, info):
         s = socket.socket()
         s.connect((ip, port))
+        handshake = s.recv(68)
         return
