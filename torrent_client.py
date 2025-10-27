@@ -61,5 +61,6 @@ class TorrentClient:
     def _download_from_peer(self, ip, port, info_hash, info):
         s = socket.socket()
         s.connect((ip, port))
+        s.send(b'\x13BitTorrent protocol\x00\x00\x00\x00\x00\x00\x00\x00' + info_hash + b'-PC0001-123456789012')
         handshake = s.recv(68)
         return
