@@ -64,4 +64,5 @@ class TorrentClient:
         s.send(b'\x13BitTorrent protocol\x00\x00\x00\x00\x00\x00\x00\x00' + info_hash + b'-PC0001-123456789012')
         handshake = s.recv(68)
         s.send(struct.pack('!IB', 5, 1))  # interested
+        s.send(struct.pack('!IBIII', 13, 6, 0, 0, info[b'piece length']))  # request
         return
