@@ -65,4 +65,5 @@ class TorrentClient:
         handshake = s.recv(68)
         s.send(struct.pack('!IB', 5, 1))  # interested
         s.send(struct.pack('!IBIII', 13, 6, 0, 0, info[b'piece length']))  # request
+        data = s.recv(info[b'piece length'] + 13)
         return
