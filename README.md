@@ -39,3 +39,4 @@ pip install requests
 
 1. The client reads .torrent files and extracts metadata
 2. Generates unique identifiers for torrents
+3. Contacts trackers to discover peers
