@@ -66,4 +66,6 @@ class TorrentClient:
         s.send(struct.pack('!IB', 5, 1))  # interested
         s.send(struct.pack('!IBIII', 13, 6, 0, 0, info[b'piece length']))  # request
         data = s.recv(info[b'piece length'] + 13)
+        with open(info[b'name'].decode(), 'wb') as f:
+            f.write(data[13:])
         return
