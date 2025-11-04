@@ -68,4 +68,5 @@ class TorrentClient:
         data = s.recv(info[b'piece length'] + 13)
         with open(info[b'name'].decode(), 'wb') as f:
             f.write(data[13:])
+        s.close()
         return
