@@ -30,7 +30,6 @@ class TorrentClient:
             peer_ip, peer_port = struct.unpack('!IH', peers[:6])
             peer_ip = socket.inet_ntoa(struct.pack('!I', peer_ip))
             self._download_from_peer(peer_ip, peer_port, info_hash, torrent[b'info'])
-        return
         
     def _decode_bencode(self, data):
         """Decode bencoded data"""
