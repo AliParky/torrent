@@ -41,3 +41,4 @@ pip install requests
 2. Generates unique identifiers for torrents
 3. Contacts trackers to discover peers
 4. Establishes connections with other peers
+5. Downloads file pieces from multiple peers
