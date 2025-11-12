@@ -22,6 +22,8 @@ class TorrentClient:
         with open(torrent_file, 'rb') as f:
             data = f.read()
         torrent = self._decode_bencode(data)
+
+        # Get peers from tracker
         info_hash = self.get_info_hash(torrent_file)
         peers = self._get_peers(torrent[b'announce'], info_hash, torrent[b'info'][b'length'])
 
