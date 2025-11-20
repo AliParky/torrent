@@ -19,7 +19,7 @@ This project implements a basic BitTorrent client that can download files using 
 - Python 3.7+
 - Required packages:
     - `hashlib` - for SHA-1 hash calculations
-    - `requests`
+    - `requests` - for HTTP tracker communication
     - `struct`
     - `socket`
 
