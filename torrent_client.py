@@ -20,6 +20,7 @@ class TorrentClient:
         return hashlib.sha1(piece_data).digest() == expected_hash
     
     def download(self, torrent_file):
+        """Download a file from a torrent"""
         with open(torrent_file, 'rb') as f:
             data = f.read()
         torrent = self._decode_bencode(data)
