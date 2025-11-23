@@ -62,6 +62,7 @@ class TorrentClient:
         return decode_next(data, 0)[0]
     
     def _get_peers(self, announce_url, info_hash, length):
+        """Get peers from tracker"""
         params = {'info_hash': info_hash, 'peer_id': b'-PC0001-123456789012', 'port': 6881, 'uploaded': 0, 'downloaded': 0, 'left': length, 'compact': 1}
         response = requests.get(announce_url.decode(), params=params)
         return self._decode(response.content)[b'peers']
