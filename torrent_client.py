@@ -42,6 +42,7 @@ class TorrentClient:
             if data[index:index+1] == b'i':
                 end = data.index(b'e', index)
                 return int(data[index+1:end]), end + 1
+            # List format: l<item1><item2>...e
             elif data[index:index+1] == b'l':
                 items, index = {}, index + 1
                 while data[index:index+1] != b'e':  # Until end marker
