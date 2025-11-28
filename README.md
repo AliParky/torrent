@@ -21,7 +21,7 @@ This project implements a basic BitTorrent client that can download files using 
     - `hashlib` - for SHA-1 hash calculations
     - `requests` - for HTTP tracker communication
     - `struct` - for binary data packing and unpacking
-    - `socket`
+    - `socket` - for TCP network connections to peers
 
 ## Installation
 
