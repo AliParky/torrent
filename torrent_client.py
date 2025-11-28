@@ -36,7 +36,7 @@ class TorrentClient:
             self._download_from_peer(peer_ip, peer_port, info_hash, torrent[b'info'])
         
     def _decode_bencode(self, data):
-        """Decode bencoded data"""
+        """Decode bencoded data into Python data structures (int, str, list, dict)."""
         def decode_next(data, index):
             # Integer format: i<number>e
             if data[index:index+1] == b'i':
