@@ -49,6 +49,7 @@ class TorrentClient:
                     item, index = decode_next(data, index)
                     items.append(item)
                 return items, index + 1
+            # Dictionary format: d<key1><value1><key2><value2>...e
             elif data[index:index+1] == b'd':
                 items, index = {}, index + 1
                 while data[index:index+1] != b'e':
