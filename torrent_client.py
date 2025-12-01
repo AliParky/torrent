@@ -57,6 +57,7 @@ class TorrentClient:
                     value, index = decode_next(data, index)
                     items[key] = value
                 return items, index + 1
+            # String format: <length>:<data>
             else:
                 colon = data.index(b':', index)
                 length = int(data[index:colon])
