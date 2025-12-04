@@ -21,6 +21,7 @@ class TorrentClient:
     
     def download(self, torrent_file):
         """Download a file from a torrent from first available peer"""
+        # Parse torrent file
         with open(torrent_file, 'rb') as f:
             data = f.read()
         torrent = self._decode_bencode(data)
