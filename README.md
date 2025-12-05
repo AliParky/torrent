@@ -34,6 +34,7 @@ git clone git clone https://github.com/AliParky/torrent
 ```bash
 pip install hashlib requests struct socket
 ```
+3. Navigate to the project directory
 
 ## How It Works
 
