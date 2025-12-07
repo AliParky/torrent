@@ -45,7 +45,7 @@ class TorrentClient:
                 return int(data[index+1:end]), end + 1
             # List format: l<item1><item2>...e
             elif data[index:index+1] == b'l':
-                items, index = {}, index + 1
+                items, index = [], index + 1
                 while data[index:index+1] != b'e':  # Until end marker
                     item, index = decode_next(data, index)
                     items.append(item)
