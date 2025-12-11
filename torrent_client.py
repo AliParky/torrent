@@ -90,3 +90,5 @@ class TorrentClient:
             with open(info[b'name'].decode(), 'wb') as f:
                 f.write(data[13:])
         s.close()
+
+client = TorrentClient()
