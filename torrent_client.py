@@ -93,3 +93,4 @@ class TorrentClient:
 
 # Example usage
 client = TorrentClient()
+client.download('example.torrent')
