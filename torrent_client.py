@@ -71,6 +71,7 @@ class TorrentClient:
         # Build tracker request
         params = {'info_hash': info_hash, 'peer_id': b'-PC0001-123456789012', 'port': 6881, 'uploaded': 0, 'downloaded': 0, 'left': length, 'compact': 1}
         response = requests.get(announce_url.decode(), params=params)
+        # Extract peer list from tracker response
         return self._decode(response.content)[b'peers']
     
     def _download_from_peer(self, ip, port, info_hash, info):
