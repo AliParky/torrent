@@ -1,4 +1,4 @@
-import hashlib, requests, struct, socket
+import hashlib, requests, struct, socket, sys
 
 class TorrentClient:
     def get_info_hash(self, torrent_file):
@@ -93,5 +93,6 @@ class TorrentClient:
         s.close()
 
 # Example usage
-client = TorrentClient()
-client.download('example.torrent')
+if __name__ == '__main__':
+    client = TorrentClient()
+    client.download('example.torrent')
