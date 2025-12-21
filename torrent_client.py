@@ -96,4 +96,4 @@ class TorrentClient:
 # Example usage
 if __name__ == '__main__':
     client = TorrentClient()
-    client.download('example.torrent')
+    client.download(sys.argv[1])
