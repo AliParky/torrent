@@ -42,7 +42,8 @@ cd torrent
 
 ## How It Works
 
-1. The client reads .torrent files and extracts metadata
+1. The client reads .torrent files and decodes bencoded data format
+2. Extracts metadata and calculates info hash (SHA-1) for torrent identification
 2. Generates unique identifiers for torrents
 3. Contacts trackers to discover peers
 4. Establishes connections with other peers
