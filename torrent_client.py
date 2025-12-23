@@ -93,7 +93,6 @@ class TorrentClient:
                 f.write(data[13:])
         s.close()
 
-# Example usage
 if __name__ == '__main__':
     client = TorrentClient()
     client.download(sys.argv[1])
