@@ -18,7 +18,7 @@ class TorrentClient:
     def verify_piece(self, piece_data, expected_hash):
         """Verify a downloaded piece matches expected hash"""
         # Compare SHA-1 hashes for integrity check
-        return hashlib.sha1(piece_data).digest() == expected_hash
+        return hashlib.sha1(piece_data).hexdigest() == expected_hash
     
     def download(self, torrent_file):
         """Download a file from a torrent from first available peer"""
