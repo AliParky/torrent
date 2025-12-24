@@ -38,7 +38,7 @@ pip install hashlib requests struct socket
 ```bash
 cd torrent
 ```
-4. Change `example.torrent` to your torrent file name
+4. Run the client with a torrent file
 
 ## How It Works
 
