@@ -95,6 +95,7 @@ class TorrentClient:
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
+        print("Usage: python torrent_client.py <torrent_file>")
         sys.exit(1)
     
     client = TorrentClient()
