@@ -93,6 +93,7 @@ class TorrentClient:
                 f.write(data[13:])
         s.close()
 
+# Main program execution
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: python torrent_client.py <torrent_file>")
