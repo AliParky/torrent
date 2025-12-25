@@ -99,5 +99,6 @@ if __name__ == '__main__':
         print("Usage: python torrent_client.py <torrent_file>")
         sys.exit(1)
     
+    print(f"Starting download of {sys.argv[1]}")
     client = TorrentClient()
     client.download(sys.argv[1])
