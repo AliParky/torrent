@@ -102,3 +102,4 @@ if __name__ == '__main__':
     print(f"Starting download of {sys.argv[1]}")
     client = TorrentClient()
     client.download(sys.argv[1])
+    print("Download complete.")
